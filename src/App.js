@@ -50,7 +50,7 @@ function App() {
 		}
 		observeTheme();
 
-		if ((state.problemSlug !== "" && state.discSlug === "description") || state.discSlug === "") {
+		if (state.problemSlug !== "" && (state.discSlug === "description" || state.discSlug === "")) {
 			let interval = setInterval(() => {
 				let btns = document.querySelector(state.AppConstants.menuJsPath);
 				if (document.body && btns) {
